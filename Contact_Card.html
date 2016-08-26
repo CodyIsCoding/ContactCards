@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Card!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Contact_styles.css">
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#button').click(function(){
+				var FirstName = $('#first').val();
+				var LastName= $('#last').val();
+				$('#right').append('<div id="card">'+'<h1>'+FirstName+' '+LastName+'</h1>'+'<p>'+'Click for Description'+'</p>'+'</div>')
+			});
+			$(document).on('click', '#card', function(){
+				var Description= $('#description').val();
+				$(this).replaceWith('<div id="data">'+Description+'</div>');
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div id="left">
+		<ul id="form">
+			<li>First Name: <input id="first" class="names" type="text" name="FirstName" value="First Name"></li>
+			<li>Last Name: <input id="last" class="names" type="text" name="LastName" value="Last Name"></li>
+			<li>Description:</li>
+			<li><textarea id="description" type="textarea" name="Contact">Enter Description...</textarea></li>
+			<li><input id="button" type="submit" name="Submit" value="Add User"></li>
+		</ul>
+	</div>
+	<div id="right">
+		
+	</div>
+</body>
+</html>

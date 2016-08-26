@@ -1,0 +1,44 @@
+#left{
+	display: inline-block;
+	width: 500px;
+	height: 600px;
+}
+#right{
+	display: inline-block;
+	width: 500px;
+	height: auto;
+}
+#form{
+	list-style-type: none;
+	display: block;
+}
+#form li{
+	margin: 10px 0px;
+}
+.names{
+	margin: 10px 0px;
+	text-align: left;
+}
+#description{
+	width: 250px;
+	height: 150px;
+}
+#card{
+	width: 350px;
+	height: 150px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 30px 10px 0px 10px;
+	vertical-align: top;
+	margin: 10px 0px;
+
+}
+#data{
+	width: 350px;
+	height: 150px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 30px 10px 0px 10px;
+	vertical-align: top;
+	margin: 10px 0px;
+}
